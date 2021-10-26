@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html>
-         <head>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-               <style>
-                  .card  {
-                        box-shadow: 0 4px 8px 8 rgba(0, 0, 0, 0.2);
-                        max-width: 300px;
-                        margin: auto;
-                        text-align: center;
-                        font-family: arial;
-                         }
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel= "stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<body style="max-width:600px" > 
 
-                  .title {
-                        color: grey;
-                        font-size: 18px;
-                         }
 
-                  button {
-                     border: none;
-                     outline: 0;
-                     display: inline-block;
-                     padding: 8px;
-                     color: white;
-                     background-color: #000;
-                     text-align: center;
-                     cursor: pointer;
-                     width: 100%
-                     font-size: 18px;
-                         }
 
-                  a      {
-                      text-decorations: none;
-                      font-size: 22px;
-                      color: black;
-                         }
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+   <span onclick=" closeSidebar () " class=" w3-button w3-display-topright w3-large"> X </span>
+   <br>
+   <div class="w3-padding w3-center">
+     <img class="w3-circle" src="homer2.jpeg" alt="avatar" style="width:75%">
+   </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">Movies</a>
+<a class="w3-bar-item w3-button" href="#">Friends<a>
+<a class="w3-bar-item w3-button" href="#">Messages</a>
+</nav>
 
-                  button:hover, a:hover 
-                         {
-                     opacity: 0.7;
-                         }
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item">Alunos</h1>
+</header>
 
-              </style>
-              
-         <head/>
-         <body>
-            
-              <h2 style="text-align:center">Lucas Machado</h2>
-         
-              <div class="card">
-                  <img src="lucas.jpeg" alt="Lucas" style="width:100%">
-                  <h1>Lucas Machado</h1>
-                  <p class="title"> CEO & Fundador, Machado T.I</p>
-                  <p>UNIDESC</p>
-                  <div style="margin : 24px 0;">
-                     <a href="#"><i class="fa fa-dribbble"></i></a>
-                     <a href="#"><i class="fa fa-twitter"></i></a>
-                     <a href="https://www.linkedin.com/in/lucas-machado-515942217/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                     <a href="#"><i class="fa fa-facebook"></i></a>
+<div class="w3-container">
+<hr>
+<div class="w3-cell-row">
+   <div class="w3-cell" style="width:30%">
+      <img class="w3-circle" src="one.png" style="with:100%>
+    </div>
+    <div class="w3-cell w3-container">
+      <h3>Rafael Bezerra da Silva</h3>
+      <p>Nortuno/Sistema de Informação</p>
+  </div>
+</div>  
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+     <img class="w3-circle" src="two.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Lucas Machado</h3>
+    <p>Noturno/Sistemas de Informação</p>
+  </div>
+</div>
+<hr>
+<!--<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="homer2.jpeg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Nome Aluno 3</h3>
+    <p>Periodo e curso do aluno 3</p>
+  </div>
+</div>
+<hr>-->
+</div>
 
-              </div>
-               <p><button>Contato</button></p>
-            </div>
-              
-     </body>
-</html>
+<footer class="w3-container w3-theme w3-margin-top">
+  <h3>Adapted by Lucas e Rafael</h3>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
